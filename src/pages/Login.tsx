@@ -80,7 +80,7 @@ export default function Login() {
         {/* Logo */}
         <div className="text-center mb-8">
           <Link to="/" className="inline-flex items-center gap-2 group">
-            <img src="/logo.png" alt="Decorista" className="h-14 w-14 object-contain" />
+            <img src="/logo.jpg" alt="Decorista" className="h-16 w-28 object-contain" />
             <span className="text-2xl font-bold text-warm-800 font-serif">Decorista</span>
           </Link>
           <h1 className="text-xl font-bold text-warm-800 mt-4 font-serif">تسجيل الدخول</h1>

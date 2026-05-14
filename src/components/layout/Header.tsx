@@ -25,7 +25,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 group">
-          <img src="/logo.png" alt="ديكوريستا" className="h-12 w-12 object-contain" />
+          <img src="/logo.jpg" alt="ديكوريستا" className="h-12 w-14 object-contain" />
           <span className="text-2xl font-bold text-warm-800 tracking-wide font-serif">
             Decorista
           </span>
