@@ -1,4 +1,5 @@
-import { Phone, CreditCard, MapPin, Clock } from "lucide-react";
+import { Phone, CreditCard, MapPin, Clock, MessageCircle, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -37,17 +38,29 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Info */}
+          {/* Info & Links */}
           <div>
-            <h3 className="font-semibold text-warm-50 mb-4 text-lg">معلومات</h3>
+            <h3 className="font-semibold text-warm-50 mb-4 text-lg">روابط مهمة</h3>
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-warm-300">
-                <MapPin size={18} className="text-terracotta-light" />
-                <span className="text-sm">التوصيل لجميع أنحاء مصر</span>
+                <MapPin size={18} className="text-terracotta-light shrink-0" />
+                <span className="text-sm">الشروق – خلف كومباوند حسن علام، المنطقة السابعة</span>
               </div>
               <div className="flex items-center gap-3 text-warm-300">
-                <Clock size={18} className="text-terracotta-light" />
+                <Clock size={18} className="text-terracotta-light shrink-0" />
                 <span className="text-sm">التوصيل خلال 3-5 أيام عمل</span>
+              </div>
+              <div className="flex items-center gap-3 text-warm-300">
+                <Phone size={18} className="text-terracotta-light shrink-0" />
+                <a href="https://wa.me/201069787615" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-white transition-colors" dir="ltr">01069787615</a>
+              </div>
+              <div className="flex items-center gap-3 text-warm-300">
+                <Mail size={18} className="text-terracotta-light shrink-0" />
+                <a href="mailto:Mohamedabozieed@gmail.com" className="text-sm hover:text-white transition-colors break-all">Mohamedabozieed@gmail.com</a>
+              </div>
+              <div className="pt-2 flex flex-col gap-2">
+                <Link to="/return-policy" className="text-sm text-warm-400 hover:text-warm-200 transition-colors">سياسة الاستبدال والاسترجاع</Link>
+                <Link to="/contact" className="text-sm text-warm-400 hover:text-warm-200 transition-colors">اتصل بنا</Link>
               </div>
             </div>
           </div>

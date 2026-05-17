@@ -41,11 +41,16 @@ export default function Header() {
             الرئيسية
           </Link>
           <Link
-            to="/shop"
+            to="/return-policy"
             className="text-warm-700 hover:text-warm-900 font-medium transition-colors flex items-center gap-1.5"
           >
-            <Store size={16} />
-            المتجر
+            سياسة الاسترجاع
+          </Link>
+          <Link
+            to="/contact"
+            className="text-warm-700 hover:text-warm-900 font-medium transition-colors flex items-center gap-1.5"
+          >
+            اتصل بنا
           </Link>
         </nav>
 
@@ -127,6 +132,12 @@ export default function Header() {
           </Link>
           <Link to="/shop" onClick={() => setMenuOpen(false)} className="text-warm-700 hover:text-warm-900 font-medium flex items-center gap-2">
             <Store size={16} /> المتجر
+          </Link>
+          <Link to="/return-policy" onClick={() => setMenuOpen(false)} className="text-warm-700 hover:text-warm-900 font-medium flex items-center gap-2">
+            سياسة الاسترجاع
+          </Link>
+          <Link to="/contact" onClick={() => setMenuOpen(false)} className="text-warm-700 hover:text-warm-900 font-medium flex items-center gap-2">
+            اتصل بنا
           </Link>
           {user ? (
             <>
