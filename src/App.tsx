@@ -15,6 +15,7 @@ import Register from "./pages/Register";
 import Account from "./pages/Account";
 import ReturnPolicy from "./pages/ReturnPolicy";
 import Contact from "./pages/Contact";
+import SellerProfile from "./pages/SellerProfile";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -38,6 +39,7 @@ const App = () => (
               <Route path="/account" element={<Account />} />
               <Route path="/return-policy" element={<ReturnPolicy />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/seller-profile" element={<SellerProfile />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </BrowserRouter>

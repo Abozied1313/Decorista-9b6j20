@@ -61,6 +61,7 @@ export default function Footer() {
               <div className="pt-2 flex flex-col gap-2">
                 <Link to="/return-policy" className="text-sm text-warm-400 hover:text-warm-200 transition-colors">سياسة الاستبدال والاسترجاع</Link>
                 <Link to="/contact" className="text-sm text-warm-400 hover:text-warm-200 transition-colors">اتصل بنا</Link>
+                <Link to="/seller-profile" className="text-sm text-warm-400 hover:text-warm-200 transition-colors">ملف المتجر</Link>
               </div>
             </div>
           </div>
